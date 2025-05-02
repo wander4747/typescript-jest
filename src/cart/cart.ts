@@ -1,6 +1,7 @@
 import Product from "@/product/product";
+import { CartInterface } from "./contracts/cart.interface";
 
-export default class Cart { 
+export default class Cart implements CartInterface { 
     private readonly _items: Product[] = []
 
     addItem(product: Product): void {
